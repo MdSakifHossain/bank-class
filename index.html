@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PAGE_TITLE</title>
+	
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	
+	<div class="app" >
+		<div class="heading" >
+			<h1>Holy Bank</h1>
+		</div>
+		
+		<div class="main" >
+			<h2>Balance: $<span id="balanceFromDom" >0</span></h2>
+			
+			<div class="input-container" >
+				<span>$</span>
+				<input
+				  type="number"
+				  id="inputAmount"
+				  placeholder="Amount of money"
+				  class="input-taker" 
+				/>
+			</div>
+			
+			<h3 class="msg-box" ><span id="msgFromDom">*Welcome to Holy Bank*</span></h3>
+		</div>
+		
+		<div class="buttons" >
+			<button id="withdrawBtn">withdraw</button>
+			<button id="depositBtn">deposit</button>
+		</div>
+	</div>
+	
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+:root {
+/*	--dom:#7239B3;*/
+    --dom:#007FFF;
+	--appBg:#263238;
+	--w:#fff;
+}
+
+@font-face {
+  font-family:cbn;/*Give it any name u desire*/
+  src: url(cbn.ttf);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:cbn, monospace;
+font-weight:100;
+transition:100ms;
+}
+
+body {
+background:var(--dom);
+color:#fff;
+text-align:center;
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+height:100vh;
+}
+
+button {
+  background:var(--dom);
+  padding:1rem;
+  color:var(--c);
+  border:2px solid var(--dom);
+  outline:none;
+  border-radius:50rem;
+  width:45%;
+  font-size:15px;
+  transition:none;
+}
+
+button:active {
+  border:2px solid var(--dom);
+  background-color:transparent;
+}
+
+.app {
+background:var(--appBg);
+width:90%;
+max-width:400px;
+padding:3.5rem 1.5rem 1.5rem 1.5rem;
+border-radius:20px;
+margin:1rem 0;
+}
+
+.app * {
+
+}
+
+.app .heading {
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  flex-direction:column;
+  margin:0 0 2rem;
+}
+
+.app .main {
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  flex-direction:column;
+  margin:2.5rem 0;
+}
+
+.app .main > * {
+  margin:1rem 0;
+}
+
+.app .main .input-container {
+border:1px solid #fff;
+display:flex;
+align-items:center;
+justify-content:space-around;
+border:3px solid var(--dom);
+padding:.3rem 1rem;
+border-radius:2rem;
+margin:0.4rem 0;
+width:95%;
+font-size:1.1rem;
+}
+
+.app .main .input-container .input-taker {
+width:100%;
+outline:none;
+background:none;
+transition:0s;
+padding:0.3rem;
+border:none;
+font-family:cbn;
+color:#fff;
+font-size:1.1rem;
+}
+
+.app .main .msg-box {
+  background:transparent;
+  padding:.5rem;
+  border-radius:20px;
+}
+
+.app .buttons {
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content:space-around;
+  margin:2rem 0 0;
+}
